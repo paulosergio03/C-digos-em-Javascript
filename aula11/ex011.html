@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País de origem</title>
+</head>
+
+<body>
+    <h1>Verificação De País</h1>
+    Qual seu país de origem? <input type="text" name="país" id="país">
+    <input type="button" id="btn" value="Verificar" onclick="Verificar()">
+    <div id="resultado">
+        Resultadado...
+    </div>
+
+    <script>
+        function Verificar() {
+            const listaDePaíses = ['França', 'Alemanhã', 'Brasil']
+
+            var país = document.getElementById('país');
+            var res = document.getElementById('resultado')
+
+
+            if (listaDePaíses == 0) {
+                res.innerHTML = `Vivendo no ${listaDePaíses[0]} Você é <strong>BRASILEIRO</strong>`
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>

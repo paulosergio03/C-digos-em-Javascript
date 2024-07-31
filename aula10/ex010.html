@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DENTRAN-CE</title>
+</head>
+
+<body>
+  Velocidade do seu carro: <input type="number" name="txtvel" id="vel"> Km/h
+  <input type="button" id="btn" value="Verificar" onclick="verificar()">
+  <div id="res">
+    Resultado...
+  </div>
+
+  </div>
+  <script>
+
+
+    function verificar() {
+      var velo = document.querySelector('input#vel')
+      var vel = Number(velo.value)
+      res.innerHTML = `<p>Sua Velocidade atual é de <strong>${vel}Km/h</strong></p>`
+      if (vel > 60) {
+        res.innerHTML = `<p>Você está <strong> MULTADO!</strong> por excesso de velocidade</p>`
+      }
+      res.innerHTML += `<p>Dirija sempre com o cinto de segurança!</p>`
+
+    }
+  </script>
+</body>
+
+</html>
